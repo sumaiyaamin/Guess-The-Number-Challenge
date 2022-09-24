@@ -25,10 +25,7 @@ while guess!= secret:
     elif guess <secret:
         print("You need to guess higher.Try Again")  
     else :
-
-
         print("You need to guess lower. Try Again")  
-    
         count+=1
 
 print(f"It took you {count} guesses.")
