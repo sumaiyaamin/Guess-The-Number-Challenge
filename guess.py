@@ -13,9 +13,10 @@ while flag:
 
 secret = random.randint(1,num)
 guess = None
-count = 1
+count = 0
 
 while guess!= secret:
+    count+=1
     guess = input(f"Enter your guess between 1 and {num} : ")
     if guess.isdigit():
         guess=int(guess)
@@ -23,10 +24,10 @@ while guess!= secret:
     if guess == secret:
         print("You Got It!")  
     elif guess <secret:
-        print("You need to guess higher.Try Again")  
+        print("You need to guess higher.Try Again")      
     else :
-        print("You need to guess lower. Try Again")  
-        count+=1
-
+        print("You need to guess lower. Try Again")
+       
+        
 print(f"It took you {count} guesses.")
 print("Thanks For Playing!")
