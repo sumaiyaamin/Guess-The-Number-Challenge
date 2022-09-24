@@ -21,12 +21,15 @@ while guess!= secret:
         guess=int(guess)
 
     if guess == secret:
-        print("You Got It!")   
-    else:
-        print("Try Again!")
+        print("You Got It!")  
+    elif guess <secret:
+        print("You need to guess higher.Try Again")  
+    else :
+
+
+        print("You need to guess lower. Try Again")  
+    
         count+=1
 
 print(f"It took you {count} guesses.")
 print("Thanks For Playing!")
-
-
